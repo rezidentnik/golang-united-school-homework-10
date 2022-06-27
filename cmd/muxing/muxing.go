@@ -45,7 +45,7 @@ func main() {
 }
 
 func nameHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(fmt.Sprintf("Hello, %s", mux.Vars(r)["param"])))
+	w.Write([]byte(fmt.Sprintf("Hello, %s!", mux.Vars(r)["param"])))
 }
 
 func badHandler(w http.ResponseWriter, r *http.Request) {
